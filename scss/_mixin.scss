@@ -1,0 +1,26 @@
+@use 'variables';
+
+@mixin desktop-view ($width, $height: unset) {
+    @media only screen and (min-width:1440px) {
+            width: $width;
+            height: $height;
+    }
+}
+
+@mixin button($bg-color, $br-color, $fn-color, $witdh, $height){
+    background-color: $bg-color;
+    border: 1px solid $br-color;
+    border-radius: 50px;
+    color: $fn-color;
+    width: $witdh;
+    height: $height;
+}
+
+@mixin button-hover ($bg-color) {
+    &:hover{
+        cursor: pointer;
+        background-color: $bg-color;
+        color: variables.$White;
+        transition: .4s;
+    }
+}

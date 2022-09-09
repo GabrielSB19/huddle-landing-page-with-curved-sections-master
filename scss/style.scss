@@ -1,6 +1,45 @@
 @use 'variables';
+@use 'mixin';
 
 
 body{
     font-family: variables.$Body-Font;
+    background-color: variables.$White;
+    color: variables.$VeryDarkCyan;
+}
+
+.main-container{
+    border: 1px solid red;
+    width: 375px;
+    margin: 0 auto 25px;
+    @include mixin.desktop-view(1440px);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px auto 100px;
+    @include mixin.desktop-view(1300px);
+
+    &__logo{
+        width: 95px;
+        height: 16px;
+        @include mixin.desktop-view(240px, 38px);
+    }
+
+    &__button{
+        @include mixin.button(variables.$White, variables.$LightPink, variables.$LightPink, 80px, 24px);
+        @include mixin.desktop-view(134px, 42px);
+        @include mixin.button-hover(variables.$LightPink);
+    }
+}
+
+.header{
+    &__title{
+        font-family: variables.$Heading-Font;
+        text-align: center;
+        width: 275px;
+        font-size: 1.48em;
+        margin: 0 auto 36px;
+    }
 }

@@ -2,6 +2,70 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 body {
   font-family: "Open Sans", sans-serif;
+  background-color: #fff;
+  color: hsl(192deg, 100%, 9%);
+}
+
+.main-container {
+  border: 1px solid red;
+  width: 375px;
+  margin: 0 auto 25px;
+}
+@media only screen and (min-width: 1440px) {
+  .main-container {
+    width: 1440px;
+    height: unset;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px auto 100px;
+}
+@media only screen and (min-width: 1440px) {
+  .navbar {
+    width: 1300px;
+    height: unset;
+  }
+}
+.navbar__logo {
+  width: 95px;
+  height: 16px;
+}
+@media only screen and (min-width: 1440px) {
+  .navbar__logo {
+    width: 240px;
+    height: 38px;
+  }
+}
+.navbar__button {
+  background-color: #fff;
+  border: 1px solid hsl(321deg, 100%, 78%);
+  border-radius: 50px;
+  color: hsl(321deg, 100%, 78%);
+  width: 80px;
+  height: 24px;
+}
+@media only screen and (min-width: 1440px) {
+  .navbar__button {
+    width: 134px;
+    height: 42px;
+  }
+}
+.navbar__button:hover {
+  cursor: pointer;
+  background-color: hsl(321deg, 100%, 78%);
+  color: #fff;
+  transition: 0.4s;
+}
+
+.header__title {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  width: 275px;
+  font-size: 1.48em;
+  margin: 0 auto 36px;
 }
 
 /*# sourceMappingURL=style.css.map */
