@@ -7,7 +7,6 @@ body {
 }
 
 .main-container {
-  border: 1px solid red;
   width: 375px;
   margin: 0 auto 25px;
 }
@@ -15,6 +14,7 @@ body {
   .main-container {
     width: 1440px;
     height: unset;
+    font-size: unset;
   }
 }
 
@@ -27,6 +27,7 @@ body {
   .navbar {
     width: 1300px;
     height: unset;
+    font-size: unset;
   }
 }
 .navbar__logo {
@@ -37,20 +38,24 @@ body {
   .navbar__logo {
     width: 240px;
     height: 38px;
+    font-size: unset;
   }
 }
 .navbar__button {
   background-color: #fff;
+  border: none;
   border: 1px solid hsl(321deg, 100%, 78%);
   border-radius: 50px;
   color: hsl(321deg, 100%, 78%);
   width: 80px;
   height: 24px;
+  display: block;
 }
 @media only screen and (min-width: 1440px) {
   .navbar__button {
     width: 134px;
     height: 42px;
+    font-size: unset;
   }
 }
 .navbar__button:hover {
@@ -66,6 +71,79 @@ body {
   width: 275px;
   font-size: 1.48em;
   margin: 0 auto 36px;
+}
+@media only screen and (min-width: 1440px) {
+  .header__title {
+    width: 1010px;
+    height: unset;
+    font-size: 2.98em;
+  }
+}
+.header__description {
+  text-align: center;
+  margin: 0 auto 49px;
+  font-weight: 600;
+  font-size: 0.8em;
+  width: 290px;
+}
+@media only screen and (min-width: 1440px) {
+  .header__description {
+    width: 590px;
+    height: 80px;
+    font-size: 1.25em;
+  }
+}
+.header__button {
+  background-color: hsl(322deg, 100%, 66%);
+  border: none;
+  border: 1px solid unset;
+  border-radius: 50px;
+  color: hsl(207deg, 100%, 98%);
+  width: 200px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 1440px) {
+  .header__button {
+    width: 400px;
+    height: 80px;
+    font-size: 1.25em;
+  }
+}
+.header__button:hover {
+  cursor: pointer;
+  background-color: hsl(321deg, 100%, 78%);
+  color: #fff;
+  transition: 0.4s;
+}
+.header__screen-mockups {
+  width: 300px;
+  display: block;
+  margin: 0 auto 138px;
+}
+@media only screen and (min-width: 1440px) {
+  .header__screen-mockups {
+    width: 1020px;
+    height: 725px;
+    font-size: unset;
+  }
+}
+
+.section-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-stats .communities__logo {
+  width: 32px;
+}
+.section-stats .communities__stats {
+  font-size: 4em;
+}
+.section-stats .communities__description {
+  font-size: 0.8em;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

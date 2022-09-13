@@ -9,7 +9,6 @@ body{
 }
 
 .main-container{
-    border: 1px solid red;
     width: 375px;
     margin: 0 auto 25px;
     @include mixin.desktop-view(1440px);
@@ -28,7 +27,7 @@ body{
     }
 
     &__button{
-        @include mixin.button(variables.$White, variables.$LightPink, variables.$LightPink, 80px, 24px);
+        @include mixin.button(variables.$White, variables.$LightPink, variables.$LightPink, 80px, 24px, false);
         @include mixin.desktop-view(134px, 42px);
         @include mixin.button-hover(variables.$LightPink);
     }
@@ -41,5 +40,53 @@ body{
         width: 275px;
         font-size: 1.48em;
         margin: 0 auto 36px;
+        @include mixin.desktop-view(1010px, unset, 2.98em)
+    }
+
+    &__description{
+        text-align: center;
+        margin: 0 auto 49px;
+        font-weight: 600;
+        font-size: 0.8em;
+        width: 290px;
+        @include mixin.desktop-view(590px, 80px, 1.25em)
+    }
+
+    &__button{
+        @include mixin.button(variables.$Pink, unset, variables.$VeryPaleBlue, 200px, 40px, true);
+        @include mixin.desktop-view(400px, 80px, 1.25em);
+        @include mixin.button-hover(variables.$LightPink);
+    }
+
+    &__screen-mockups{
+        width: 300px;
+        display: block;
+        margin: 0 auto 138px;
+        @include mixin.desktop-view(1020px, 725px);
+    }
+}
+
+.section-stats{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .communities{
+        &__logo{
+            width: 32px;
+        }
+
+        &__stats{
+            font-size: 4em;
+        }
+
+        &__description{
+            font-size: 0.8em;
+            text-align: center;
+        }
+    }
+
+    .messages{
+
     }
 }

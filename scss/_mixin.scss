@@ -1,19 +1,25 @@
 @use 'variables';
 
-@mixin desktop-view ($width, $height: unset) {
+@mixin desktop-view ($width, $height: unset, $fn-size: unset) {
     @media only screen and (min-width:1440px) {
             width: $width;
             height: $height;
+            font-size: $fn-size;
     }
 }
 
-@mixin button($bg-color, $br-color, $fn-color, $witdh, $height){
+@mixin button($bg-color, $br-color, $fn-color, $witdh, $height, $center){
     background-color: $bg-color;
+    border: none;
     border: 1px solid $br-color;
     border-radius: 50px;
     color: $fn-color;
     width: $witdh;
     height: $height;
+    display: block;
+    @if $center == true {
+        margin: 0 auto;
+    }
 }
 
 @mixin button-hover ($bg-color) {
