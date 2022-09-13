@@ -72,21 +72,25 @@ body{
     align-items: center;
 
     .communities{
-        &__logo{
-            width: 32px;
-        }
-
-        &__stats{
-            font-size: 4em;
-        }
-
-        &__description{
-            font-size: 0.8em;
-            text-align: center;
-        }
+        @include mixin.stats(32px);
     }
 
     .messages{
-
+        @include mixin.stats(24px){
+            width: 69px;
+            margin: auto;
+        }
     }
+}
+
+.section-grow-together{
+    @include mixin.flexSections();
+}
+
+.section-flowing-conversations{
+    @include mixin.flexSections();
+}
+
+.section-your-users{
+    @include mixin.flexSections();
 }
