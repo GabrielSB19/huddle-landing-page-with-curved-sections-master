@@ -70,9 +70,10 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    @include mixin.section-stats-desktop();
     .communities{
         @include mixin.stats(32px);
+        @include mixin.stats-desktop(50px);
     }
 
     .messages{
@@ -80,17 +81,21 @@ body{
             width: 69px;
             margin: auto;
         }
+        @include mixin.stats-desktop(42px);
     }
 }
 
 .section-grow-together{
     @include mixin.flexSections();
+    @include mixin.flexSections-desktop();
 }
 
 .section-flowing-conversations{
     @include mixin.flexSections();
+    @include mixin.flexSections-desktop(row-reverse);
 }
 
 .section-your-users{
     @include mixin.flexSections();
+    @include mixin.flexSections-desktop();
 }

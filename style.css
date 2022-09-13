@@ -135,6 +135,13 @@ body {
   flex-direction: column;
   align-items: center;
 }
+@media only screen and (min-width: 1440px) {
+  .section-stats {
+    flex-direction: row;
+    justify-content: space-around;
+    height: 800px;
+  }
+}
 .section-stats .communities {
   margin-bottom: 98px;
 }
@@ -147,6 +154,17 @@ body {
 }
 .section-stats .communities__description {
   font-size: 0.8em;
+  text-align: center;
+}
+.section-stats .communities__logo {
+  width: 50px;
+}
+.section-stats .communities__stats {
+  font-size: 6em;
+  margin: 0;
+}
+.section-stats .communities__description {
+  font-size: 1.5em;
   text-align: center;
 }
 .section-stats .messages {
@@ -164,6 +182,17 @@ body {
   text-align: center;
   width: 69px;
   margin: auto;
+}
+.section-stats .messages__logo {
+  width: 42px;
+}
+.section-stats .messages__stats {
+  font-size: 6em;
+  margin: 0;
+}
+.section-stats .messages__description {
+  font-size: 1.5em;
+  text-align: center;
 }
 
 .section-grow-together {
@@ -187,6 +216,25 @@ body {
   font-size: 0.9em;
   width: 330px;
 }
+@media only screen and (min-width: 1440px) {
+  .section-grow-together {
+    justify-content: space-around;
+    flex-direction: row;
+    height: 800px;
+  }
+  .section-grow-together .image-container__ilustration {
+    width: 527px;
+  }
+  .section-grow-together .description__title {
+    font-size: 2.3em;
+    text-align: left;
+  }
+  .section-grow-together .description__content {
+    text-align: left;
+    font-size: 1em;
+    width: 495px;
+  }
+}
 
 .section-flowing-conversations {
   display: flex;
@@ -209,6 +257,25 @@ body {
   font-size: 0.9em;
   width: 330px;
 }
+@media only screen and (min-width: 1440px) {
+  .section-flowing-conversations {
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    height: 800px;
+  }
+  .section-flowing-conversations .image-container__ilustration {
+    width: 527px;
+  }
+  .section-flowing-conversations .description__title {
+    font-size: 2.3em;
+    text-align: left;
+  }
+  .section-flowing-conversations .description__content {
+    text-align: left;
+    font-size: 1em;
+    width: 495px;
+  }
+}
 
 .section-your-users {
   display: flex;
@@ -230,6 +297,25 @@ body {
   text-align: center;
   font-size: 0.9em;
   width: 330px;
+}
+@media only screen and (min-width: 1440px) {
+  .section-your-users {
+    justify-content: space-around;
+    flex-direction: row;
+    height: 800px;
+  }
+  .section-your-users .image-container__ilustration {
+    width: 527px;
+  }
+  .section-your-users .description__title {
+    font-size: 2.3em;
+    text-align: left;
+  }
+  .section-your-users .description__content {
+    text-align: left;
+    font-size: 1em;
+    width: 495px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
