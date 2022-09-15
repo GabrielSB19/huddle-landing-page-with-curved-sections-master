@@ -65,7 +65,7 @@ body {
   transition: 0.4s;
 }
 
-.header__title {
+.header__title, .section-your-community__title {
   font-family: "Poppins", sans-serif;
   text-align: center;
   width: 275px;
@@ -73,7 +73,7 @@ body {
   margin: 0 auto 36px;
 }
 @media only screen and (min-width: 1440px) {
-  .header__title {
+  .header__title, .section-your-community__title {
     width: 1010px;
     height: unset;
     font-size: 2.98em;
@@ -93,7 +93,7 @@ body {
     font-size: 1.25em;
   }
 }
-.header__button {
+.header__button, .section-your-community__button {
   background-color: hsl(322deg, 100%, 66%);
   border: none;
   border: 1px solid unset;
@@ -103,15 +103,16 @@ body {
   height: 40px;
   display: block;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 @media only screen and (min-width: 1440px) {
-  .header__button {
+  .header__button, .section-your-community__button {
     width: 400px;
     height: 80px;
     font-size: 1.25em;
   }
 }
-.header__button:hover {
+.header__button:hover, .section-your-community__button:hover {
   cursor: pointer;
   background-color: hsl(321deg, 100%, 78%);
   color: #fff;
@@ -134,6 +135,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url(""), url("../images/bg-section-top-mobile-1.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position-y: top, bottom;
 }
 @media only screen and (min-width: 1440px) {
   .section-stats {
@@ -194,12 +198,18 @@ body {
   font-size: 1.5em;
   text-align: center;
 }
+@media only screen and (min-width: 1440px) {
+  .section-stats {
+    background-image: url(""), url("../images/bg-section-top-desktop-1.svg");
+  }
+}
 
 .section-grow-together {
+  background-color: hsl(207deg, 100%, 98%);
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 180px;
+  padding: 150px 0;
 }
 .section-grow-together .image-container__ilustration {
   width: 246px;
@@ -240,7 +250,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 180px;
+  padding: 150px 0;
+  background-image: url("../images/bg-section-bottom-mobile-1.svg"), url("../images/bg-section-top-mobile-2.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position-y: top, bottom;
 }
 .section-flowing-conversations .image-container__ilustration {
   width: 246px;
@@ -276,12 +289,18 @@ body {
     width: 495px;
   }
 }
+@media only screen and (min-width: 1440px) {
+  .section-flowing-conversations {
+    background-image: url("../images/bg-section-bottom-desktop-1.svg"), url("../images/bg-section-top-desktop-2.svg");
+  }
+}
 
 .section-your-users {
+  background-color: hsl(207deg, 100%, 98%);
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 180px;
+  padding: 150px 0;
 }
 .section-your-users .image-container__ilustration {
   width: 246px;
@@ -315,6 +334,27 @@ body {
     text-align: left;
     font-size: 1em;
     width: 495px;
+  }
+}
+
+.section-your-community {
+  height: 400px;
+  padding-top: 250px;
+  background-image: url("../images/bg-section-bottom-mobile-2.svg"), url("../images/bg-footer-top-mobile.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position-y: top, bottom;
+}
+@media only screen and (min-width: 1440px) {
+  .section-your-community {
+    background-image: url("../images/bg-section-bottom-desktop-2.svg"), url("../images/bg-footer-top-desktop.svg");
+  }
+}
+.section-your-community__title {
+  margin-top: 0;
+}
+@media (min-width: 1440px) {
+  .section-your-community {
+    height: 600px;
   }
 }
 

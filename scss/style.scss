@@ -56,6 +56,7 @@ body{
         @include mixin.button(variables.$Pink, unset, variables.$VeryPaleBlue, 200px, 40px, true);
         @include mixin.desktop-view(400px, 80px, 1.25em);
         @include mixin.button-hover(variables.$LightPink);
+        margin-bottom: 50px;
     }
 
     &__screen-mockups{
@@ -83,9 +84,12 @@ body{
         }
         @include mixin.stats-desktop(42px);
     }
+    @include mixin.banner('', '../images/bg-section-top-mobile-1.svg');
+    @include mixin.banner-desktop('', '../images/bg-section-top-desktop-1.svg');
 }
 
 .section-grow-together{
+    background-color: variables.$VeryPaleBlue;
     @include mixin.flexSections();
     @include mixin.flexSections-desktop();
 }
@@ -93,9 +97,39 @@ body{
 .section-flowing-conversations{
     @include mixin.flexSections();
     @include mixin.flexSections-desktop(row-reverse);
+    @include mixin.banner('../images/bg-section-bottom-mobile-1.svg', '../images/bg-section-top-mobile-2.svg');
+    @include mixin.banner-desktop('../images/bg-section-bottom-desktop-1.svg', '../images/bg-section-top-desktop-2.svg');
+
 }
 
 .section-your-users{
+    background-color: variables.$VeryPaleBlue;
     @include mixin.flexSections();
     @include mixin.flexSections-desktop();
+}
+
+.section-your-community{
+    height: 400px;
+    padding-top: 250px;
+    @include mixin.banner('../images/bg-section-bottom-mobile-2.svg', '../images/bg-footer-top-mobile.svg');
+    @include mixin.banner-desktop('../images/bg-section-bottom-desktop-2.svg', '../images/bg-footer-top-desktop.svg');
+
+    &__title{
+        margin-top: 0;
+        @extend .header__title;
+    }
+
+    &__button{
+        @extend .header__button;
+    }
+}
+
+@media (min-width: 1440px) {
+    .section-your-community{
+        height: 600px;
+    }
+}
+
+.newsletter{
+
 }
