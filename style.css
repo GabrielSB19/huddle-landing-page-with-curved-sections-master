@@ -343,6 +343,7 @@ body {
   background-image: url("../images/bg-section-bottom-mobile-2.svg"), url("../images/bg-footer-top-mobile.svg");
   background-repeat: no-repeat, no-repeat;
   background-position-y: top, bottom;
+  margin-bottom: -2px;
 }
 @media only screen and (min-width: 1440px) {
   .section-your-community {
@@ -356,6 +357,28 @@ body {
   .section-your-community {
     height: 600px;
   }
+}
+.newsletter {
+  background-color: hsl(192deg, 100%, 9%);
+  color: hsl(207deg, 100%, 98%);
+  padding: 70px 24px 40px;
+}
+
+.newsletter-subscription__title {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  margin-bottom: 28px;
+}
+.newsletter-subscription__description {
+  font-size: 0.95em;
+  margin-bottom: 28px;
+}
+.newsletter-subscription__form__input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */
