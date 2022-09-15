@@ -138,6 +138,7 @@ body{
 }
 
 .newsletter-subscription {
+    margin-bottom: 100px;
     &__title{
         text-transform: uppercase;
         font-size: 1.2em;
@@ -157,4 +158,40 @@ body{
         margin-bottom: 16px;
     }
     
+    &__submit-container{
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    &__submit-container__submit{       
+        @include mixin.button(variables.$Pink, unset, variables.$VeryPaleBlue, 200px, 40px, false);
+        border-radius: 8px;
+        text-align: center;
+        @include mixin.desktop-view(400px, 80px, 1.25em);
+        @include mixin.button-hover(variables.$LightPink);
+    }
+}
+
+.newsletter-contact{
+    &__logo{
+        width: 206px;
+        margin-bottom: 18px;
+    }
+
+    &__description{
+        font-size: 0.95em;
+        margin-bottom: 28px;
+    }
+
+    &__phone-container{
+        margin-bottom: 15px;
+    }
+
+    &__email-container{
+        margin-bottom: 50px;
+    }
+
+    &__anchor{
+        
+    }
 }

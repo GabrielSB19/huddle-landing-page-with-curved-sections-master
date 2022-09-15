@@ -364,6 +364,9 @@ body {
   padding: 70px 24px 40px;
 }
 
+.newsletter-subscription {
+  margin-bottom: 100px;
+}
 .newsletter-subscription__title {
   text-transform: uppercase;
   font-size: 1.2em;
@@ -379,6 +382,50 @@ body {
   border: none;
   border-radius: 8px;
   margin-bottom: 16px;
+}
+.newsletter-subscription__submit-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.newsletter-subscription__submit-container__submit {
+  background-color: hsl(322deg, 100%, 66%);
+  border: none;
+  border: 1px solid unset;
+  border-radius: 50px;
+  color: hsl(207deg, 100%, 98%);
+  width: 200px;
+  height: 40px;
+  display: block;
+  border-radius: 8px;
+  text-align: center;
+}
+@media only screen and (min-width: 1440px) {
+  .newsletter-subscription__submit-container__submit {
+    width: 400px;
+    height: 80px;
+    font-size: 1.25em;
+  }
+}
+.newsletter-subscription__submit-container__submit:hover {
+  cursor: pointer;
+  background-color: hsl(321deg, 100%, 78%);
+  color: #fff;
+  transition: 0.4s;
+}
+
+.newsletter-contact__logo {
+  width: 206px;
+  margin-bottom: 18px;
+}
+.newsletter-contact__description {
+  font-size: 0.95em;
+  margin-bottom: 28px;
+}
+.newsletter-contact__phone-container {
+  margin-bottom: 15px;
+}
+.newsletter-contact__email-container {
+  margin-bottom: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
