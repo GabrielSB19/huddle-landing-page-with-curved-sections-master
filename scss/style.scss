@@ -131,11 +131,33 @@ body{
     }
 }
 
+
 .newsletter{
     background-color: variables.$VeryDarkCyan;
     color: variables.$VeryPaleBlue;
     padding: 70px 24px 40px;
 }
+
+@media (min-width: 1440px) {
+    .newsletter{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+
+    .newsletter-contact{
+        &__logo{
+            width: 250px;
+        }
+
+        &__description{
+            font-size: 1.1em;
+            width: 370px;
+        }
+    }
+
+}
+
 
 .newsletter-subscription {
     margin-bottom: 100px;
@@ -204,4 +226,44 @@ body{
         display: flex;
         align-items: center;
     }
+}
+
+@media (min-width: 1440px) {
+    .newsletter-subscription {
+        display: flex;
+        width: 580px;
+        height: 238px;
+        &__title{
+            font-size: 1.6em;
+        }
+    
+        &__description{
+            font-size: 1.1em;
+            margin-bottom: 30px;
+        }
+        
+        &__form__input{
+            width: 90%;
+        }
+
+        &__submit-container{
+            align-items: flex-end;
+        }
+
+        &__submit-container__submit{
+            width: 160px;
+            height: 50px;
+            
+        }
+    }
+}
+
+
+.attribution{
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a{
+    color: blue;
 }
